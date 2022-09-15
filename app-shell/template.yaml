@@ -1,0 +1,16 @@
+name: app-shell
+description: Shell application
+types:
+  - app-template
+inputs:
+  - label: Project name
+    type: text
+    name: project_name
+    default: project-name
+global-computed-inputs:
+  shell_project_name: '{{project_name}}'
+hooks:
+  - type: run
+    trigger: after-render
+    commands:
+      - stk run update-env

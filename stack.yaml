@@ -1,0 +1,14 @@
+description: Next.js stack para aplicações multizonas com monorepo utilizando o turbo.
+name: matter-web-nextjs
+display-name: matter-web-nextjs
+picture: NextJsLogo.png
+category: Frontend
+technologies:
+  - Typescript
+about: docs/about.md
+use-cases:
+  - title: Criar aplicação Next.js com turbo
+    content: docs/use-case.md
+    stackfile: stackfiles/default.yaml
+  - title: Task para atualizar o .env
+    content: docs/use-case-task.md

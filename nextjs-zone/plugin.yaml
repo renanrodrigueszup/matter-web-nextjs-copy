@@ -1,0 +1,44 @@
+name: nextjs-zone
+description: Cria uma nova zona em uma aplicação next.js com monorepo.
+display-name: nextjs-zone
+picture: NextJsLogoInverted.png
+category: Frontend
+technologies:
+  - Typescript
+compatibility:
+  - Typescript
+about: docs/about.md
+usage: docs/usage.md
+use-case: docs/use-case.md
+implementation: docs/implementation.md
+types:
+  - app
+inputs:
+  - label: App name zone
+    type: text
+    name: zone_name
+    default: appZone
+    required: true
+  - label: Zone run port
+    type: int
+    name: zone_port
+    default: 3000
+    required: true
+  - label: Zone base path
+    type: text
+    name: zone_base_path
+    default: 'app-path'
+    required: true
+hooks:
+  - type: edit
+    trigger: after-render
+    path: apps/shell/next.config.js
+    changes:
+      - search:
+          pattern: (return \[)
+          insert-after:
+            snippet: snippet/rewrite.js
+  - type: run
+    trigger: after-render
+    commands:
+      - stk run update-env

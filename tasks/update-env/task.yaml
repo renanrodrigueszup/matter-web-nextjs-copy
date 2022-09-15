@@ -1,0 +1,11 @@
+name: update-env
+description: Task to update env file
+supported-os:
+- windows
+- linux
+- mac
+requirements-check:
+  node:
+    check-command: node --version
+    info: node is not installed
+command: node ./scripts/copy-env.js

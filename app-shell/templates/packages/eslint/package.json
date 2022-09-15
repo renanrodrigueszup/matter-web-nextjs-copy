@@ -1,0 +1,25 @@
+{
+  "name": "@{{inputs.project_name}}/eslint",
+  "version": "0.0.0",
+  "license": "MIT",
+  "files": [
+    "eslint-preset.js"
+  ],
+  "dependencies": {
+    "@next/eslint-plugin-next": "^12.1.4",
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "eslint": "8.9.0",
+    "eslint-config-next": "12.0.10",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

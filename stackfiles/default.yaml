@@ -1,0 +1,3 @@
+type: app
+description: Aplicação nextjs com estrutura de monorepo utilizando o turbo.
+template: matter-web-nextjs/app-shell
