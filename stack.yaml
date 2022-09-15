@@ -12,3 +12,4 @@ use-cases:
     stackfile: stackfiles/default.yaml
   - title: Task para atualizar o .env
     content: docs/use-case-task.md
+    stackfile: stackfiles/default.yaml
