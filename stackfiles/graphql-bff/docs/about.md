@@ -1,0 +1,1 @@
+O plugin **graphql-bff** adiciona na aplicação criada pela stack **matter-web-nextjs** uma nova zona configurada como um bff graphql também é adicionado uma query a aplicação shell que busca uma lista de usuários para exemplificar a execução de uma query graphql.

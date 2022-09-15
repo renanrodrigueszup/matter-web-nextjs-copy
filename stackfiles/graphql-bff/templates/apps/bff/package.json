@@ -1,0 +1,28 @@
+{
+  "name": "bff",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "env-cmd -f ../../.env ts-node-dev --transpile-only --no-notify --exit-child server.ts | pino-pretty --messageFormat {msg} --ignore pid,hostname",
+    "build": "ncc build server.ts",
+    "start": "node dist/index.js",
+    "lint": "eslint ./**/*.ts*"
+  },
+  "dependencies": {
+    "@{{global_computed_inputs.shell_project_name}}/shared": "*",
+    "apollo-datasource-rest": "^3.5.3",
+    "apollo-server": "^3.8.1",
+    "axios": "^0.27.2",
+    "graphql": "^16.5.0",
+    "graphql-tools": "^8.2.8",
+    "nanoid": "3.3.4",
+    "pino": "^8.0.0"
+  },
+  "devDependencies": {
+    "@{{global_computed_inputs.shell_project_name}}/eslint": "*",
+    "dotenv": "^16.0.1",
+    "graphql-tools": "^8.2.8",
+    "pino-pretty": "^8.0.0"
+  },
+  "lint-staged": {}
+}

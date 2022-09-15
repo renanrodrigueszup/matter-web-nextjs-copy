@@ -1,0 +1,7 @@
+{
+    "devDependencies": {
+      "@vercel/ncc": "0.34.0",
+      "ts-node-dev": "^1.1.8"
+    }
+}
+  
