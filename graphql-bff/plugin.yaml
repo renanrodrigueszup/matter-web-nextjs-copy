@@ -5,7 +5,6 @@ picture: plugin.png
 category: Backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
 about: docs/about.md
 usage: docs/usage.md
-use-case: docs/use-case.md
 implementation: docs/implementation.md
 technologies: # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#technologies
   - "Api"
