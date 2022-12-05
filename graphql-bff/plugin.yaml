@@ -3,7 +3,7 @@ description: Adiciona um bff graphql a aplicação
 display-name: graphql-bff
 picture: plugin.png
 category: Backend # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#category
-about: docs/about.md
+     about: docs/about.md
 usage: docs/usage.md
 implementation: docs/implementation.md
 technologies: # Ref: https://docs.stackspot.com/latest/docs/creators-guide/yaml/#technologies
